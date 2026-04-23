@@ -1,0 +1,45 @@
+
+--3. Um dragão protege uma ponte.
+Ele só libera passagem se a pessoa disser a palavra secreta:
+● fogo
+Regras:
+● Se digitar "fogo", passa.
+● Senão, ponte bloqueada.
+Peça a palavra ao usuário.--
+  
+!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ponte Protegido</title>
+</head>
+
+<body>
+    <input id="palavraSecreta" tipe="password" placeholder="palavra secreta">
+    <button onclick="enter()">Enter</button>
+    <div id="mensagem"></div>
+
+    <Script>
+        function enter() {
+            
+            const palavraSecreta = document.getElementById("palavraSecreta").value;
+            const mensagem = document.getElementById("mensagem");
+
+            const palavraSecretaCorrecta = "fogo"
+            
+            
+
+
+            if (palavraSecreta === palavraSecretaCorrecta ) {
+                mensagem.textContent = "Passa";
+
+            } else {
+                mensagem.textContent = "ponte bloqueada";
+
+            }
+        }
+
+    </Script>
+</body>
+
+</html>

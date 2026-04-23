@@ -1,0 +1,49 @@
+-- 6. Um baú mágico só abre quando a senha correta for digitada.
+Senha correta:
+● ouro
+Crie um programa que continue pedindo a senha até o usuário acertar.
+Quando acertar, mostrar:
+● Tesouro liberado!--
+
+<html>
+
+<head>
+    <title>Baù mágico</title>
+</head>
+
+<body>
+    <h1>Baù mágico</h1>
+    <br>
+    <input id="senha" tipe="password" placeholder="Baù mágico">
+    <button onclick="liberar()">Liberar</button>
+    <ul id="digiteSenha"></ul>
+    <div id="mensagem"></div>
+
+    <Script>
+        
+        function liberar() {
+            
+            const senha = document.getElementById("senha").value;
+           
+            const senhaCorrecta = "ouro"
+
+            if (senha === senhaCorrecta) {
+
+                console.log("Tesouro liberado!");
+
+            }else {
+                const li = document.createElement("li");
+            li.textContent = "Digite novamente a senha";
+
+            document.getElementById("digiteSenha").appendChild(li);
+            document.getElementById("Baù mágico").value = "";
+            }
+                                             
+        }
+
+    </Script>
+</body>
+
+</html>
+
+ 
